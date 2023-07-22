@@ -1,0 +1,135 @@
+/* homepage.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Set the default font color */
+  }
+  
+  /* Homepage Styles */
+  .homepage {
+    padding: 5px;
+  }
+  
+  .banner {
+    background-color: silver;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 18px;
+    color:silver ;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .product-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product-info {
+    margin-top: 10px;
+  }
+  
+  .product-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .product-info p {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 200px;
+  }
+  
+  .sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 5px;
+  }
+  
+  .sidebar a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    color: #666;
+  }
+  
+  /* Decorative Styles */
+  /* Feel free to customize these styles to your liking */
+  
+  .banner {
+    background-image: linear-gradient(to bottom, rgb(124, 29, 29), black);
+    color: #fff;
+  }
+  
+  .product-item {
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar {
+    background-color: black;
+    color: red;
+  }
+  
+  .sidebar h2 {
+    color: red;
+  }
+  
+  .sidebar a {
+    color: red;
+  }
+  
+  .sidebar a:hover {
+    color: #f2f;
+  }
+  
