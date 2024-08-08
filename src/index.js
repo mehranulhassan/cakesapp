@@ -2,12 +2,36 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+
+//import { AuthProvider } from './components/AuthContext';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import reportWebVitals from './reportWebVitals';
+import ShopContextProvider from './components/context/context';
+const theme = {
+  '$primary': '#3498db',
+  '$secondary': '#2ecc71',
+  '$success': '#28a745',
+  '$info': '#17a2b8',
+  '$warning': '#ffc107',
+  '$danger': '#dc3545',
+  '$light': '#f8f9fa',
+  '$dark': '#343a40'
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+
+   
+    <ShopContextProvider>
+        <App />
+        </ShopContextProvider> 
+    
+  
+  
+    
+   
   </React.StrictMode>
 );
 

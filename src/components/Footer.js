@@ -1,41 +1,44 @@
 import React from 'react';
-import '../App.css'
+import './footer.css';
 
 const Footer = () => {
-  return (
-    <footer className="f">
-      <div className="f-c">
-        <div className="f-s">
-          <h4 className="f-h">Customer service</h4>
-          <p className="f-t">Help&Contactus</p>
-          <p className="f-t">Return&Refunds</p>
-          <p className="f-t">Online Stores</p>
-          <p className="f-t">Term&Conditions</p>
-        </div>
-        <div className="f-s">
-          <h4 className="f-h">Company</h4>
-          <p className="f-t">What we Do</p>
-          <p className="f-t">Available services</p>
-          <p className="f-t">Latest Posts</p>
-          <p className="f-t">FAQS</p>
-        </div>
-        <div className="f-s">
-          <h4 className="f-h">Social Media</h4>
-          <p className="f-t">Twitter</p>
-          <p className="f-t">Instagram</p>
-          <p className="f-t">Tumbir</p>
-          <p className="f-t">Pinterest</p>
-        </div>
-        <div className="f-s">
-          <h4 className="f-h">Profile</h4>
-          <p className="f-t">My Account</p>
-          <p className="f-t">Check out</p>
-          <p className="f-t">Order Tracking</p>
-          <p className="f-t">Help&Support</p>
-        </div>
-      </div>
-    </footer>
-  );
-}
+    return (
+        <footer className='footer'>
+            <div className='footer-content'>
+                <div className='footer-section'>
+                    <h2>About Us</h2>
+                    <p>
+                        We are a leading e-commerce platform providing a wide range of products
+                        and excellent customer service. Our mission is to make online shopping
+                        easy and accessible for everyone.
+                    </p>
+                </div>
+                <div className='footer-section'>
+                    <h2>Contact Us</h2>
+                    <p>Email: support@example.com</p>
+                    <p>Phone: +1234567890</p>
+                    <p>Address: 123, Main Street, City, Country</p>
+                </div>
+                <div className='footer-section'>
+                    <h2>Follow Us</h2>
+                    <div className='social-icons'>
+                        <a href='https://facebook.com' target='_blank' rel='noopener noreferrer'>
+                            <i className="fab fa-facebook-f"></i>
+                        </a>
+                        <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>
+                            <i className="fab fa-twitter"></i>
+                        </a>
+                        <a href='https://instagram.com' target='_blank' rel='noopener noreferrer'>
+                            <i className="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className='footer-bottom'>
+                <p>&copy; {new Date().getFullYear()} Your Company. All rights reserved.</p>
+            </div>
+        </footer>
+    );
+};
 
 export default Footer;

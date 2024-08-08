@@ -1,26 +1,31 @@
 import React from 'react';
-import '../Sidebar.css'; // Import the CSS file
+import { Link } from 'react-router-dom';
+import './sidebar.css';
+import { FiMessageCircle, FiPlusSquare, FiCalendar } from 'react-icons/fi';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h2>Categories</h2>
-      <ul className="category-list">
-        <li className="category-item">
-          <a href="/Birthdaycake">Birthday Cakes</a>
-        </li>
-        <li className="category-item">
-          <a href="/weddingcake">Wedding Cakes</a>
-        </li>
-        <li className="category-item">
-          <a href="/Services">Anniversary Cakes</a>
-        </li>
-        <li className="category-item">
-          <a href="/Cakes">Special Occasion Cakes</a>
-        </li>
-        {/* Add more categories */}
-      </ul>
-     
+      <Link to="/chat" className="sidebar-link">
+        <div className="sidebar-item">
+          <FiMessageCircle className="sidebar-icon" />
+          <p>Chat</p>
+        </div>
+      </Link>
+
+      <Link to="/addnewproduct" className="sidebar-link">
+        <div className="sidebar-item">
+          <FiPlusSquare className="sidebar-icon" />
+          <p>Add New Product</p>
+        </div>
+      </Link>
+
+      <Link to="/calendar" className="sidebar-link">
+        <div className="sidebar-item">
+          <FiCalendar className="sidebar-icon" />
+          <p>Calendar</p>
+        </div>
+      </Link>
     </div>
   );
 };

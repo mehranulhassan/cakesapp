@@ -7,6 +7,7 @@ import service4 from '../images/cake33.jpg';
 import service5 from '../images/cake34.jpg';
 import service6 from '../images/cake35.jpg';
 import service7 from '../images/cake1.jpg';
+import Team from "./Chat";
 import service8 from '../images/cake1.jpg';
 
 const Services = () => {
@@ -56,6 +57,9 @@ const Services = () => {
           Enjoy our delicious assortment of cupcakes in various flavors and decorative designs.
         </p>
       </div>
+      <Team>
+        
+      </Team>
 
       <div className="service">
         <img src={service6} alt="Service 6" className="service-image" />
